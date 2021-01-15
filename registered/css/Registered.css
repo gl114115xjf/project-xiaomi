@@ -1,0 +1,346 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearBox::after {
+	content: "";
+	height: 0;
+	clear: both;
+	display: block;
+}
+
+.container {
+	width: 1130px;
+	margin: 0 auto;
+}
+
+header {
+	height: 98px;
+}
+
+.floor1 {
+	height: 588px;
+	width: 100%;
+	background: url(../img/ia_100000001.jpg) no-repeat center center;
+	position: relative;
+}
+
+.floor1>a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.floor1 .logIn {
+	height: 556px;
+	width: 410px;
+	background-color: white;
+	z-index: 99;
+	position: absolute;
+	right: 190px;
+	bottom: 0;
+}
+
+.floor1 .logIn .top {
+	padding: 27px 0 24px 0;
+}
+
+.floor1 .logIn .top>div {
+	width: 50%;
+	font-size: 24px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #666666;
+	cursor: pointer;
+}
+
+.floor1 .logIn .top .orange {
+	color: #f56600;
+}
+
+.floor1 .logIn .top>div:first-child {
+	border-right: 3px solid #e0e0e0;
+}
+
+.floor1 .account {
+	padding: 0 31px;
+}
+
+.floor1 .account input {
+	width: 100%;
+	padding: 13px 16px 13px 14px;
+	box-sizing: border-box;
+	height: 48px;
+	outline: none;
+	border: 1px solid #e0e0e0;
+	margin-bottom: 14px;
+}
+
+/* 更改 placeholder颜色*/
+input::-webkit-input-placeholder {
+	/* WebKit, Blink, Edge */
+	color: #999;
+}
+
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #999;
+}
+
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #999;
+}
+
+input:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #999;
+}
+
+input::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #999;
+}
+
+.floor1 .account .txt {
+	color: #f56600;
+	display: none;
+}
+
+.floor1 .account button {
+	width: 100%;
+	margin-bottom: 14px;
+	background-color: #ff6700;
+	height: 50px;
+	outline: none;
+	border: 1px solid #ff6700;
+	color: white;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.floor1 .account .logInBtn {
+	padding-top: 10px;
+}
+
+.floor1 .account .phoneLogInBtn {
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+	color: #ff6700;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+.userNameLogIn span{
+	cursor: pointer;
+}
+.floor1 .account .last a {
+	color: #999;
+	vertical-align: middle;
+}
+
+.floor1 .account .last {
+	text-align: center;
+}
+
+.floor1 .account .last span {
+	font-size: 13px;
+	color: #999;
+	vertical-align: middle;
+	padding: 0 5px;
+}
+
+.floor1 .logInBottom {
+	position: absolute;
+	bottom: 58px;
+	left: 70%;
+	transform: translate(-50%);
+	width: 100%;
+}
+
+.floor1 .logInBottom>div {
+	height: 30px;
+	width: 30px;
+	background-color: #0288d1;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 17px;
+}
+
+.floor1 .logInBottom>div a {
+	color: white;
+}
+
+.floor1 .logInBottom>div:nth-last-child(3) {
+	background-color: #d32f2f;
+}
+
+.floor1 .logInBottom>div:nth-last-child(2) {
+	background-color: #0ae;
+	font-weight: bold;
+}
+
+.floor1 .logInBottom>div:nth-last-child(4) {
+	background-color: #00d20d;
+}
+.floor1 .messsage{
+	width: 100%;
+	padding: 0 31px;
+	box-sizing: border-box;
+	display: none;
+}
+.floor1 .messsage .phoneNumber{
+	width: 100%;
+	margin-bottom: 14px;
+}
+
+.floor1 .phoneNumber .phoneNumbertxt{
+	display: inline-block;
+	width: calc(100% - 280px);
+	border: 1px solid #e0e0e0;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+	box-sizing: border-box;
+	color: #666;
+	font-size: 13px;
+}
+.floor1 .phoneNumber input{
+	width: 280px;
+	height: 48px;
+	box-sizing: border-box;
+	border: 1px solid #e0e0e0;
+	padding-left: 10px;
+	outline: none;
+	position: relative;
+	border-left: 0;
+	top: -2px;
+}
+.floor1 .getMesssage{
+	width: 100%;
+	margin-bottom: 14px;
+}
+.floor1 .getMesssage>div{
+	width: 90px;
+	height: 50px;
+	padding: 15px 10px;
+	border:1px solid #e0e0e0;
+	text-align: center;
+	color: #003ab5;
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: 12px;
+}
+.floor1 .getMesssage input{
+	height: 50px;
+	width: calc(100% - 90px);
+	box-sizing: border-box;
+	border:1px solid #e0e0e0;
+	outline: none;
+	padding-left: 10px;
+	border-right: 0;
+}
+.floor1 .messsage .txt{
+	color: #ff6700;
+	display: none;
+}
+.floor1 .messsage button{
+	width: 100%;
+	margin-top: 10px;
+	height: 50px;
+	margin-bottom: 14px;
+	color: white;
+	background-color: #ff6700;
+	outline: none;
+	border: 1px solid #ff6700;
+	font-size: 14px;
+	cursor: pointer;
+}
+.floor1 .messsage .userNameLogIn{
+	text-align: center;
+	color: #ff6700;
+	margin-bottom: 30px;
+}
+.floor1 .messsage .NotGet a{
+	color: #999;
+}
+.floor1 .messsage .NotGet{
+	text-align: center;
+}
+.floor1 .Qr_code{
+	color: #333;
+	text-align: center;
+	font-size: 13px;
+	padding-top: 150px;
+	display: none;
+}
+.floor1 .Qr_code i{
+	color: #ccc;
+	cursor: pointer;
+	font-size: 14px;
+}
+.floor1 .Qr_code>div{
+	margin-bottom: 14px;
+	text-align: center;
+}
+.floor1 .Qr_code>div img{
+	width: 180px;
+}
+.Qr_code_txt{
+	color: #757575;
+}
+.Qr_code_txt span{
+	color: #ff6700;
+	padding: 0 5px;
+}
+.bottom{
+	line-height: 35px;
+	font-size: 14px;
+	padding-top: 100px;
+	text-align: center;
+}
+.bottom a{
+	color: #757575;
+	padding: 0 10px;
+}
+.bottom a:hover{
+	color: #333;
+}
+.bottom a:first-child{
+	color: #333;
+}
+.bottom span{
+	color: #ccc;
+}
+.bottom_bottom span{
+	color: #9d9d9d;
+	vertical-align: middle;
+}
+.bottom_bottom a{
+	color: #9d9d9d;
+	vertical-align: middle;
+}
+.bottom_bottom img{
+	vertical-align: middle;
+}

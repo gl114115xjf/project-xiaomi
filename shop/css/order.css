@@ -1,0 +1,999 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearBox::after {
+	content: "";
+	height: 0;
+	clear: both;
+	display: block;
+}
+
+.container {
+	width: 1226px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 26px 0;
+}
+
+header .logo {
+	width: 48px;
+	height: 48px;
+	overflow: hidden;
+	background-color: #ff6700;
+	position: relative;
+	margin-right: 45px;
+}
+
+header .logo img {
+	position: absolute;
+}
+
+header .logo img:first-child {
+	left: -50px;
+	transition: all 0.5s;
+}
+
+header .logo img:nth-child(2) {
+	left: 0;
+	transition: all 0.5s;
+}
+
+header .logo:hover img:first-child {
+	left: 0px;
+}
+
+header .logo:hover img:nth-child(2) {
+	left: 50px;
+}
+
+header .bigTxt {
+	font-size: 28px;
+	line-height: 49px;
+}
+
+header .smallTxt {
+	margin-top: 22px;
+	margin-left: 15px;
+	color: #757575;
+	font-size: 12px;
+}
+
+header .headerRight {
+	line-height: 49px;
+	font-size: 12px;
+	color: #757575;
+}
+
+header .headerRight a {
+	font-size: 12px;
+	color: #757575;
+}
+
+header .headerRight .borders {
+	margin: 0 15px;
+}
+
+header .headerRight a:hover {
+	color: #ff6700;
+	cursor: pointer;
+}
+
+header .headerRight>div:first-child:hover {
+	color: #ff6700;
+	cursor: pointer;
+}
+
+header .headerRight>div:first-child {
+	position: relative;
+}
+
+header .headerRight>div:first-child .person {
+	position: absolute;
+	top: 100%;
+	width: 110px;
+	padding: 7px 0;
+	line-height: 30px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	transform: translate(-10%);
+	display: none;
+	background-color: white;
+}
+
+.line {
+	height: 2px;
+	background-color: #ff6700;
+}
+
+.floor1 {
+	padding: 40px 0 60px;
+	background-color: #f5f5f5;
+	font-size: 18px;
+}
+
+.floor1 .container {
+	padding: 48px 24px 0;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+.floor1 .container .address {
+	margin-top: 20px;
+}
+
+.floor1 .container .address .addAddress {
+	height: 180px;
+	width: 270px;
+	border: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	position: relative;
+	cursor: pointer;
+	transition: all 1s;
+	margin-bottom: 20px;
+	margin-right: 17px;
+}
+
+.floor1 .container .address .addAddress1 {
+	height: 180px;
+	width: 270px;
+	border: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	position: relative;
+	margin-bottom: 20px;
+	margin-right: 17px;
+	padding: 15px 24px 0;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.floor1 .container .address .addAddress1:hover {
+	border: 1px solid #999;
+}
+
+.floor1 .container .address .addAddress1:hover .Modify {
+	display: block;
+}
+
+.floor1 .container .address .addAddress1 .titles>div {
+	line-height: 30px;
+}
+
+.floor1 .container .address .addAddress1 .titles .fr {
+	color: rgb(176, 176, 176);
+	font-size: 13px;
+}
+
+.floor1 .container .address .addAddress1 .titles {
+	margin-bottom: 10px;
+}
+
+.floor1 .container .address .txtTwo {
+	line-height: 20px;
+	font-size: 13.5px;
+	color: #757575;
+}
+
+.floor1 .container .address .Modify {
+	color: #ff6700;
+	font-size: 13.5px;
+	position: absolute;
+	right: 24px;
+	bottom: 10px;
+	cursor: pointer;
+	z-index: 22;
+	display: none;
+}
+
+.floor1 .container .address .addAddress:hover {
+	border: 1px solid #b0b0b0;
+}
+
+.floor1 .container .address .addAddress .add {
+	height: 60px;
+	font-size: 14px;
+	width: 70px;
+	text-align: center;
+	color: #999;
+	margin: 0 auto;
+	top: 50%;
+	position: relative;
+	transform: translateY(-50%);
+}
+
+.floor1 .container .address .addAddress .add .top {
+	height: 30px;
+	width: 30px;
+	background-color: #e0e0e0;
+	color: white;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 50%;
+	transition: all 1s;
+}
+
+.floor1 .container .address .addAddress:hover .add .top {
+	background-color: #b0b0b0;
+}
+
+.floor1 .container .preferential {
+	line-height: 40px;
+}
+
+.floor1 .container .shopList .items {
+	line-height: 60px;
+	color: #424242;
+	font-size: 14px;
+}
+
+.floor1 .container .shopList .items img {
+	height: 30px;
+	width: 30px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.floor1 .container .shopList .items .name {
+	width: 650px;
+}
+
+.floor1 .container .shopList .items .price {
+	width: 150px;
+	text-align: center;
+}
+
+.floor1 .container .shopList .items .allPrice {
+	text-align: right;
+	color: #ff6701;
+	width: 290px;
+}
+
+.floor1 .container .distribution {
+	padding: 35px 0;
+	border-top: 1px solid #e0e0e0;
+}
+
+.floor1 .container .distribution>span:first-child {
+	display: inline-block;
+	width: 150px;
+}
+
+.floor1 .container .distribution .red {
+	color: #ff6700;
+	font-size: 14px;
+	margin-right: 14px;
+}
+
+.floor1 .container .coupon {
+	padding: 30px 24px;
+	font-size: 14px;
+}
+
+.floor1 .container .coupon .use>div {
+	width: 150px;
+	height: 50px;
+	color: #757575;
+	font-size: 13.5px;
+	transition: all 0.5s;
+}
+
+.floor1 .container .coupon .use .adds {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background-color: #ff6700;
+	text-align: center;
+	line-height: 22px;
+	color: white;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+
+.floor1 .container .coupon .use span:hover {
+	color: #ff6700;
+	cursor: pointer;
+}
+
+.floor1 .container .numberShop>span {
+	width: 126px;
+	height: 28px;
+	text-align: right;
+	display: inline-block;
+	color: #757575;
+}
+
+.floor1 .container .numberShop>span:last-child {
+	min-width: 73px;
+	max-width: 100px;
+	color: #ff6700;
+}
+
+.floor1 .container .numberShop:last-child {
+	margin-top: 10px;
+}
+
+.floor1 .container .numberShop .pays {
+	font-size: 28px;
+}
+
+.floor1 .container .btn {
+	padding: 20px 48px;
+	box-sizing: border-box;
+}
+
+.floor1 .container:nth-child(2) {
+	padding: 20px 48px;
+	margin-top: 2px;
+	text-align: right;
+	font-size: 14px;
+}
+
+.floor1 .container:nth-child(2) a>div {
+	display: inline-block;
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 30px;
+	text-align: center;
+	border: 1px solid #b0b0b0;
+}
+
+.floor1 .container:nth-child(2) a:first-child {
+	color: #b0b0b0;
+}
+
+.floor1 .container:nth-child(2) a:last-child div {
+	color: white;
+	background-color: #ff6700;
+	border: 1px solid #ff6700;
+	transition: all 0.5s;
+}
+
+.floor1 .container:nth-child(2) a:last-child div:hover {
+	background-color: #f25807;
+	border: 1px solid #f25807;
+}
+
+#btn1 {
+	cursor: pointer;
+}
+
+
+.floor6 .top {
+	padding: 27px 0;
+	font-size: 16px;
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.floor6 .top>.item {
+	width: calc(100% / 5);
+	box-sizing: border-box;
+	float: left;
+	border-right: 1px solid #e0e0e0;
+}
+
+.floor6 .top>.item a {
+	color: #616161;
+	transition: all 0.5s;
+}
+
+.floor6 .top>.item .iconfont {
+	font-size: 25px;
+	vertical-align: middle;
+}
+
+.floor6 .top>.item a:hover {
+	color: #ff6700;
+}
+
+.floor6 .down {
+	padding: 40px 0;
+	width: 100%;
+}
+
+.floor6 .down .downLeft {
+	width: calc(100% - 250px);
+}
+
+.floor6 .down .downLeft .downItem {
+	width: calc(100% / 6);
+	float: left;
+}
+
+.floor6 .down .downLeft .downItem>div a {
+	font-size: 12px;
+	color: #666;
+}
+
+.floor6 .down .downLeft .downItem>div a:hover {
+	color: #ff6700;
+}
+
+.floor6 .down .downLeft .downItem>div {
+	margin-top: 10px;
+}
+
+.floor6 .down .downLeft .downItem>div:first-child {
+	font-size: 14px;
+	color: #424242;
+	margin-bottom: 26px;
+}
+
+.floor6 .down .downRight {
+	width: 250px;
+	box-sizing: border-box;
+	text-align: center;
+	border-left: 1px solid #e0e0e0;
+}
+
+.floor6 .down .downRight>div {
+	margin-bottom: 5px;
+}
+
+.floor6 .down .downRight>div:first-child {
+	color: #ff6700;
+	font-size: 22px;
+}
+
+.floor6 .down .downRight>div:nth-child(2) {
+	font-size: 12px;
+	color: #616161;
+}
+
+.floor6 .down .downRight>div:nth-child(3) {
+	border: 1px solid #ff6700;
+	background-color: white;
+	width: 118px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 12px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	transition: all 1s;
+	cursor: pointer;
+}
+
+.floor6 .down .downRight>div:nth-child(3) a {
+	color: #ff6700;
+	transition: all 1s;
+}
+
+.floor6 .down .downRight>div:nth-child(3):hover {
+	background-color: #ff6700;
+}
+
+.floor6 .down .downRight>div:nth-child(3):hover a {
+	color: white;
+}
+
+.floor6 .down .downRight>div:nth-child(4) {
+	font-size: 12px;
+	color: #616161;
+}
+
+.floor6 .down .downRight>div:nth-child(4) i {
+	font-size: 24px;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-top: 8px;
+	position: relative;
+	top: -5px;
+	cursor: pointer;
+	color: #616161;
+}
+
+.floor6 .down .downRight>div:nth-child(4) i:hover {
+	color: #ff6700;
+}
+
+.floor6 .down .downRight>div:nth-child(4) a:nth-child(3) {
+	position: relative;
+}
+
+.floor6 .down .downRight>div:nth-child(4) img {
+	position: absolute;
+	top: 20px;
+	height: 126px;
+	right: -50px;
+	display: none;
+}
+
+.floor6 .down .downRight>div:nth-child(4) a:nth-child(3):hover img {
+	display: block;
+}
+
+footer {
+	background-color: rgba(245, 245, 245);
+	padding: 30px 0;
+}
+
+footer .footerLeft {
+	width: 57px;
+	height: 57px;
+	background-color: #FF6700;
+	text-align: center;
+	margin-right: 10px;
+}
+
+footer .footerLeft img {
+	margin-top: 5px;
+}
+
+footer .footerRight a {
+	font-size: 12px;
+	color: #b0b0b0;
+	vertical-align: middle;
+}
+
+footer .footerRight>div:first-child a {
+	color: #757575;
+}
+
+footer .footerRight a:hover {
+	color: #FF6700;
+}
+
+footer .footerRight span {
+	color: #b0b0b0;
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+footer .footerRight>div:nth-child(6) img {
+	height: 28px;
+}
+
+footer .footerRight>div:nth-child(6) a:last-child img {
+	height: 40px;
+}
+
+footer .footerRight>div:nth-child(6) a:last-child img:first-child {
+	display: none;
+}
+
+footer {
+	background-color: #fafafa;
+}
+
+footer .footerBottom {
+	height: 20px;
+	margin-top: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.AddShippingAddress {
+	position: fixed;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 100%;
+	width: 100%;
+	display: none;
+	top: -30px;
+	opacity: 0;
+}
+
+.AddShippingAddress .txt {
+	width: 660px;
+	background-color: #f5f5f5;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.AddShippingAddress .txt .top {
+	padding: 14px 20px;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+.AddShippingAddress .txt .top .error {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #757575;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 1s;
+	position: relative;
+	left: 8px;
+}
+
+.AddShippingAddress .txt .top .error:hover {
+	background-color: #e53935;
+	color: white;
+}
+
+.AddShippingAddress .txt .center {
+	padding: 20px;
+	background-color: white;
+}
+
+.AddShippingAddress .txt .center input {
+	width: 260px;
+	height: 18px;
+	padding: 10px 16px;
+	outline: none;
+	border: #e0e0e0 1px solid;
+	color: #666;
+	background-color: rgba(0, 0, 0, 0);
+	position: relative;
+	z-index: 8;
+}
+
+.AddShippingAddress .txt .center .message {
+	margin-bottom: 14px;
+}
+
+.AddShippingAddress .txt .center .message>div:first-child input {
+	margin-right: 23px;
+}
+
+.AddShippingAddress .txt .center .message>div {
+	position: relative;
+}
+
+.AddShippingAddress .txt .center .errorss {
+	position: absolute !important;
+	background-color: #e53935 !important;
+	font-size: 12px !important;
+	padding: 5px 10px !important;
+	color: white !important;
+	top: -23px !important;
+	left: 10px !important;
+	z-index: 99999 !important;
+	display: none;
+}
+
+.AddShippingAddress .txt .center .errorss i {
+	position: absolute;
+	top: 20px !important;
+	font-size: 16px !important;
+	left: 17px !important;
+	color: #e53935 !important;
+}
+
+.AddShippingAddress .txt .center .txtss {
+	position: absolute;
+	background-color: white;
+	top: 10px;
+	left: 20px;
+	color: #e0e0e0;
+	z-index: 1;
+	transition: all 0.2s linear;
+	font-size: 13.5px;
+}
+
+.AddShippingAddress .txt .center .orangss {
+	border: 1px solid #ff6700;
+}
+
+.AddShippingAddress .txt .center .oranges {
+	color: #ff6700;
+}
+
+.AddShippingAddress .txt .center .city {
+	height: 40px;
+	padding: 10px 16px;
+	box-sizing: border-box;
+	border: 1px solid #e0e0e0;
+	font-size: 13.5px;
+	color: #999;
+	position: relative;
+	margin-bottom: 14px;
+	position: relative;
+	z-index: 20;
+}
+
+.AddShippingAddress .txt .center .city i {
+	position: absolute;
+	right: 10px;
+	color: #b0b0b0;
+}
+
+/* 省市区 */
+.AddShippingAddress .txt .center .city .searCity {
+	display: none;
+	width: calc(100% + 2px);
+	padding: 0 20px;
+	padding-top: 15px;
+	position: absolute;
+	top: 0;
+	left: -1px;
+	border: 1px solid #ff6700;
+	background-color: white;
+	box-sizing: border-box;
+	z-index: 888;
+}
+
+.AddShippingAddress .txt .center .city .searCity .int {
+	position: relative;
+}
+
+.AddShippingAddress .txt .center .city .searCity .int i {
+	position: absolute;
+	top: 42px;
+	left: 16px;
+	font-size: 20px;
+}
+
+.AddShippingAddress .txt .center .city .searCity .int .texts {
+	position: absolute;
+	top: 42px;
+	left: 50px;
+	color: #666;
+	transition: all 0.5s;
+}
+
+.AddShippingAddress .txt .center .city .searCity .int .texts.colorss {
+	color: #b0b0b0;
+}
+
+.AddShippingAddress .txt .center .city .searCity:nth-child(3) {
+	display: none;
+}
+
+.AddShippingAddress .txt .center .city .searCity .citys {
+	padding: 6px 0;
+	line-height: 30px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.AddShippingAddress .txt .center .city .searCity .citys>div {
+	display: inline-block;
+	margin-right: 5px;
+	color: #ff6700;
+	cursor: pointer;
+}
+
+.AddShippingAddress .txt .center .city .searCity .citys>span {
+	display: none;
+	margin-right: 5px;
+	color: #757575;
+}
+
+.AddShippingAddress .txt .center .city .searCity .citys>div:first-child {
+	display: inline-block;
+}
+
+.AddShippingAddress .txt .center .city .searCity .citys>span:nth-child(2) {
+	display: inline-block;
+}
+
+.AddShippingAddress .txt .center .city .searCity .moreaddress {
+	padding: 20px 0 14px 0;
+}
+
+.AddShippingAddress .txt .center .city .searCity .moreaddress span {
+	margin: 0 14px 6px 0;
+	line-height: 30px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.AddShippingAddress .txt .center .city .searCity .moreaddress span:hover {
+	color: #ff6700;
+}
+
+.AddShippingAddress .txt .center .city .searCity .change {
+	padding: 20px 0;
+	border-top: 1px solid #e0e0e0;
+	color: #b0b0b0;
+	cursor: pointer;
+}
+
+.AddShippingAddress .txt .center .city .searCity .change:hover {
+	color: #ff6700;
+}
+
+.AddShippingAddress .txt .center .city .searCity input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 16px 10px 45px;
+	height: 44px;
+	margin-top: 30px;
+}
+
+.AddShippingAddress .txt .center .city .searCity .txts {
+	color: #b0b0b0;
+	padding: 10px 0;
+	font-size: 14px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.AddShippingAddress .txt .center .city .searCity .Select {
+	padding: 20px 0;
+	color: #b0b0b0;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.AddShippingAddress .txt .center .city .searCity .Select:hover {
+	color: #ff6700;
+}
+
+.AddShippingAddress .txt .center .city .searCity .cityX {
+	font-size: 10px;
+	position: absolute;
+	right: 6px;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 10px;
+	cursor: pointer;
+}
+
+.AddShippingAddress .txt .center .readTxt {
+	position: relative;
+	margin-bottom: 14px;
+}
+
+.AddShippingAddress .txt .center .readTxt textarea {
+	height: 70px;
+	padding: 10px 16px;
+	border: 1px solid #e0e0e0;
+	font-size: 13.5px;
+	color: #999;
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	z-index: 4;
+	background-color: rgba(0, 0, 0, 0);
+	resize: vertical;
+}
+
+.AddShippingAddress .txt .center .readTxt>div {
+	position: absolute;
+	top: 9px;
+	font-size: 13.5px;
+	left: 20px;
+	color: #b0b0b0;
+	z-index: 2;
+}
+
+.AddShippingAddress .txt .center .readTxt .Detailed {
+	display: none;
+	transition: all 0.2s linear;
+}
+
+.AddShippingAddress .txt .center .readTxt .xiangxi {
+	background-color: rgba(0, 0, 0, 0);
+	transition: all 0.2s linear;
+}
+
+.AddShippingAddress .txt .center .athher .xiangxi {
+	color: #ff6700;
+	background-color: white;
+}
+
+.AddShippingAddress .txt .center .athher .inptItenm {
+	border-color: #ff6700;
+}
+
+.AddShippingAddress .txt .center .readTxt input {
+	height: 40px;
+	padding: 10px 16px;
+	border: 1px solid #e0e0e0;
+	font-size: 13.5px;
+	color: #999;
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	z-index: 4;
+	background-color: rgba(0, 0, 0, 0);
+	width: 620px;
+}
+
+.AddShippingAddress .txt .bottom {
+	padding: 20px;
+	text-align: center;
+}
+
+.AddShippingAddress .txt .bottom>div {
+	display: inline-block;
+	height: 40px;
+	width: 160px;
+	margin: 0 7px;
+	line-height: 40px;
+	font-size: 14px;
+	color: white;
+	cursor: pointer;
+}
+
+.AddShippingAddress .txt .bottom>.btns:first-child {
+	background-color: #ff6700;
+	transition: all 0.5s;
+}
+
+.AddShippingAddress .txt .bottom>.btns:first-child:hover {
+	background-color: #f25807;
+}
+
+.AddShippingAddress .txt .bottom>.btns:last-child {
+	background-color: #b0b0b0;
+	transition: all 0.5s;
+}
+
+.AddShippingAddress .txt .bottom>.btns:last-child:hover {
+	background-color: #757575;
+}
+.notChoose {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: -10px;
+	display: none;
+	opacity: 0;
+}
+.notChoose .box{
+	width: 480px;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.notChoose .box .top{
+	padding: 70px 20px;
+	font-size: 26px;
+	text-align: center;
+}
+.notChoose .box .bottom{
+	padding: 20px 0;
+	text-align: center;
+	background-color: #f5f5f5;
+	border-top: 1px solid #e0e0e0;
+}
+.notChoose .box .bottom .chooseBtn{
+	display: inline-block;
+	height: 40px;
+	width: 160px;
+	background-color: #ff6700;
+	color: white;
+	line-height: 40px;
+	cursor: pointer;
+}
+.notChoose .box .chooseX{
+	position: absolute;
+	width: 30px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	top: 5px;
+	right: 5px;
+	color: #757575;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.notChoose .box .chooseX:hover{
+	background-color: #e53935;
+	color: white;
+}

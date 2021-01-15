@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearBox::after {
+	content: "";
+	height: 0;
+	clear: both;
+	display: block;
+}
+
+.container {
+	width: 1226px;
+	margin: 0 auto;
+}
+html,body{
+	text-align: center;
+	height: 100%;
+}
+.bigBox{
+	background-color: #f9f9f9;
+	border: 1px solid transparent;
+	height: 99.5%;
+}
+.smallBox{
+	width: 854px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 0 34px 30px;
+	background-color: white;
+	margin-top: 50px;
+}
+.smallBox .txt{
+	margin-top: 40px;
+	font-size: 30px;
+}
+.smallBox .countries{
+	height: 248px;
+	width: 332px;
+	padding: 30px 0;
+	margin:0 auto ;
+	text-align: left;
+	font-size: 14px;
+	font-weight: normal;
+	color: #333;
+}
+.smallBox .countries .countries_txt{
+	padding-bottom: 5px;
+}
+.smallBox .countries>div{
+	width: 100%;
+}
+.smallBox .countries .countries_select{
+	height: 40px;
+	width: 100%;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #e8e8e8;
+	outline: none;
+}
+.smallBox .countries .prompt{
+	margin-bottom: 15px;
+	margin-top: 5px;
+	color: #666;
+}
+.smallBox .countries .phoneNumber{
+	padding-top: 5px;
+}
+.smallBox .countries .number_select{
+	height: 44px;
+	margin-bottom: 15px;
+	width: 68px;
+	padding-left: 14px;
+	box-sizing: border-box;
+	border: 1px solid #e8e8e8;
+	outline: none;
+	position: relative;
+	top: 1px;
+}
+.smallBox .countries input{
+	height: 44px;
+	margin-bottom: 15px;
+	width: 260px;
+	padding: 10px;
+	border: 1px solid #e8e8e8;
+	box-sizing: border-box;
+	outline: none;
+}
+.smallBox .countries button{
+	width: 330px;
+	height: 42px;
+	background-color: #ff6700;
+	margin-top: 15px;
+	color: white;
+	outline: none;
+	border: 1px solid rgba(186,186,186,.3);
+	cursor: pointer;
+}
+.smallBox .countries button:hover{
+	opacity: 0.7;
+}
+#phone{
+	color: #f66;
+	font-size: 14px;
+	display: none;
+}
+#phone1{
+	color: #f66;
+	font-size: 14px;
+	display: none;
+}
+.smallBox .agreement{
+	margin-top: 50px;
+	color: #9d9d9d;
+	font-size: 14px;
+}
+.smallBox .agreement a{
+	color: #000000;
+	font-weight: bold;
+	font-size: 14px;
+}
+.bottom{
+	line-height: 35px;
+	font-size: 14px;
+	margin-top: 70px;
+	position: absolute;
+	border: 50px;
+	left: calc(50% - 305.306px);
+}
+.bottom a{
+	color: #757575;
+	padding: 0 10px;
+}
+.bottom a:hover{
+	color: #333;
+}
+.bottom a:first-child{
+	color: #333;
+}
+.bottom span{
+	color: #ccc;
+}
+.bottom_bottom span{
+	color: #9d9d9d;
+	vertical-align: middle;
+}
+.bottom_bottom a{
+	color: #9d9d9d;
+	vertical-align: middle;
+}
+.bottom_bottom img{
+	vertical-align: middle;
+}
